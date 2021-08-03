@@ -1,3 +1,0 @@
-/*
-My First Java Program
-*/
