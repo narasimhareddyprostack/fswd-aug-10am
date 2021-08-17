@@ -1,0 +1,10 @@
+Js Object -
+-- Group of key:value pair as single entity 
+-- group of properties(property name:property value) as one entity 
+-- group of dara & functionality 
+
+-- duplicate keys not allowed 
+
+-- JS Ojbect - not iteable 
+
+-- for( in Object)
