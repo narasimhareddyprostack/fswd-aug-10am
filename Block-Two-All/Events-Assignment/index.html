@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Events</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <h1>JavaScript Events</h1>
+  <body>
+    <h2>OnMouseover:</h2>
+    <p>mouse over to change button background colour</p>
+    <div
+      onmouseover="mOver(this)"
+      style="background-color: red; width: 150px; height: 20px; padding: 20px"
+    >
+      Mouse Over
+    </div>
+
+    <script>
+      function mOver(obj) {
+        obj.style.backgroundColor = "#1ec5e5";
+        obj.innerHTML = "Telangana srikanth";
+      }
+    </script>
+    <h2>OnMouseout:</h2>
+    <p>mouse over to change button background colour</p>
+    <div
+      onmouseout="mOut(this)"
+      style="background-color: red; width: 150px; height: 20px; padding: 20px"
+    >
+      MouseOut
+    </div>
+
+    <script>
+      function mOut(obj) {
+        obj.style.backgroundColor = "yellow";
+        obj.innerHTML = "saikiran";
+      }
+    </script>
+
+    <h2>Onclick:</h2>
+    <p>onclick to change button background colour</p>
+    <div
+      onclick="k(this)"
+      style="background-color: red; width: 150px; height: 20px; padding: 20px"
+    >
+      onclick
+    </div>
+
+    <script>
+      function k(abc) {
+        abc.style.backgroundColor = "orange";
+        abc.innerHTML = "hari";
+      }
+    </script>
+    <h2>Ondblclick:</h2>
+    <p>ondlbclick to change button background colour</p>
+    <div
+      ondblclick="c(this)"
+      style="background-color: red; width: 150px; height: 20px; padding: 20px"
+    >
+      ondblclick
+    </div>
+
+    <script>
+      function c(id) {
+        id.style.backgroundColor = "green";
+        id.innerHTML = "rohan";
+      }
+    </script>
+    <h2>Onfocus:</h2>
+    <p>click to change background colour</p>
+    <input
+      type="text"
+      onfocus="a(this)"
+      style="width: 150px; height: 20px; padding: 20px"
+    />
+
+    <script>
+      function a(id) {
+        id.style.backgroundColor = "blue";
+      }
+    </script>
+    <h3>Onblur:</h3>
+    <p>click to change background colour</p>
+    <input
+      type="text"
+      onblur="ab(this)"
+      style="width: 150px; height: 20px; padding: 20px"
+    />
+
+    <script>
+      function ab(id) {
+        id.style.backgroundColor = " black";
+      }
+    </script>
+  </body>
+</html>
