@@ -89,12 +89,17 @@
     <input
       type="text"
       onblur="ab(this)"
+      id="sai"
       style="width: 150px; height: 20px; padding: 20px"
     />
 
     <script>
       function ab(id) {
-        id.style.backgroundColor = " black";
+        let x = document.getElementById("sai");
+        console.log(x);
+        x.value = x.value.toUpperCase();
+
+        //id.style.backgroundColor = " black";
       }
     </script>
   </body>

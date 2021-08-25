@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Event</title>
+    <script>
+      function mouseover_change() {
+        document.getElementById("mouseover").style.backgroundColor = "green";
+        document.getElementById("mouseover").style.color = "white";
+      }
+
+      function mouseout_change() {
+        document.getElementById("mouseout").style.backgroundColor = "yellow";
+        document.getElementById("mouseout").style.color = "white";
+      }
+
+      function click_change() {
+        document.getElementById("click").style.backgroundColor = "pink";
+        document.getElementById("click").style.color = "white";
+      }
+
+      function dbl_change() {
+        document.getElementById("double").style.backgroundColor = "yellow";
+        document.getElementById("double").style.color = "white";
+      }
+
+      function focus_change() {
+        document.getElementById("focus").style.backgroundColor = "green";
+        document.getElementById("focus").style.color = "white";
+      }
+
+      function change_upper() {
+        var x = document.getElementById("blur");
+        x.value = x.value.toUpperCase();
+      }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Javascript Events</h1>
+
+    <div>
+      <h2>OnMouseOver:</h2>
+      <p>Mouse over to change button background color</p>
+      <button id="mouseover" onmouseover="mouseover_change()">
+        Mouse over
+      </button>
+    </div>
+
+    <div>
+      <h2>OnMouseOut:</h2>
+      <p>Mouse over to change button background color</p>
+      <button id="mouseout" onmouseout="mouseout_change()">mouse out</button>
+    </div>
+
+    <div>
+      <h2>OnClick:</h2>
+      <p>Click to change button background color</p>
+      <button id="click" onclick="click_change()">Onclick</button>
+    </div>
+
+    <div>
+      <h2>Ondblclick:</h2>
+      <p>Double Click to change button background color</p>
+      <button id="double" ondblclick="dbl_change()">Ondblclick</button>
+    </div>
+
+    <div>
+      <h2>Onfocus:</h2>
+      <p>Click to change Input background color</p>
+      <input type="text" onfocus="focus_change()" id="focus" />
+    </div>
+
+    <div>
+      <h2>Onblur:</h2>
+      <p>Change Lower case to upper case onblur Events</p>
+      <input type="text" onblur="change_upper()" id="blur" />
+    </div>
+  </body>
+</html>
