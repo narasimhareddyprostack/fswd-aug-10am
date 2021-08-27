@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Registration Page</title>
+    <script src="./js/validation.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>Registration with validation</h1>
+    <form onsubmit="return validation()">
+      <lable>User Name</lable>
+      <input type="text" id="user_Name" /> <br /><br />
+      <span id="space_one"></span><br />
+
+      <lable>Password</lable>
+      <input type="text" id="password" value="MyPassword" /> <br /><br />
+      <span id="space_two"></span><br />
+      <lable>Re-Enter Password</lable>
+      <input type="text" id="repassword" /> <br />
+      <span id="space_three"></span>
+      <br />
+      <input type="submit" value="Registration" />
+    </form>
+  </body>
+</html>
