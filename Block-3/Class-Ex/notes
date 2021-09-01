@@ -7,3 +7,10 @@ Mould
 Plan
 Blue Print  
 --------- to construct object
+-----------------------------------
+Constructor?
+- speical method to initilize object value.
+- It will exectute automatically at time of object creation.
+- It will only once. 
+
+- we cant invoke a constructor method explicitly
