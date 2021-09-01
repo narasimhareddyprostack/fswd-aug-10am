@@ -1,0 +1,6 @@
+What is class?
+---class is template to construct object 
+What is constructor?
+
+-special method, it will execute only once and automatically at time of object creation 
+-To initilize values 
