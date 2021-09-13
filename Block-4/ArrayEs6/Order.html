@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <h1>Groceries</h1>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Product Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-data"></tbody>
+    </table>
+  </body>
+
+  <script>
+    let groceries = [
+      { id: 1, product_Name: "Creme De Menthe Green", random: "30-823-1890" },
+      {
+        id: 2,
+        product_Name: "Bread Base - Gold Formel",
+        random: "38-603-4749",
+      },
+      { id: 3, product_Name: "Foam Cup 6 Oz", random: "99-647-8415" },
+      { id: 4, product_Name: "Cake Circle, Paprus", random: "17-270-0207" },
+      { id: 5, product_Name: "Shiro Miso", random: "25-827-0947" },
+    ];
+    let tbody = document.getElementById("tbody-data");
+    let rowData = groceries.map((grocery) => {
+      return `<tr><td> ${grocery.id} </td>
+        <td> ${grocery.product_Name} </td>
+        <td> ${grocery.random.substr(7, 9)} </td></tr>`;
+    });
+    tbody.innerHTML += rowData;
+  </script>
+</html>
