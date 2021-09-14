@@ -1,0 +1,7 @@
+start node app 
+> npm init -y 
+> npm install bcrypt 
+
+
+
+https://www.npmjs.com/package/bcrypt
